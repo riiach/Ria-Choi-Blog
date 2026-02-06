@@ -11,4 +11,10 @@ html,
 body {
     font-family: Inter, "Helvetica Neue", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.swiper {
+    --swiper-pagination-bullet-inactive-color: rgba(0, 0, 0, 0.3);
+    --swiper-pagination-color: rgba(0, 0, 0, 0.8);
 }

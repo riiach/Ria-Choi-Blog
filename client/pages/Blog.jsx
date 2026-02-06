@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Navbar from '../components/Navbar.jsx'
 import Category from '../components/Category.jsx'
-import BlogPost from './BlogPost.jsx'
+import PostCard from './PostCard.jsx'
 import posts from '../data/posts.js'
 import { useSearch } from '../context/SearchContext.jsx';
 import Footer from './Footer.jsx'
@@ -11,30 +11,38 @@ const Blog = () => {
     const [renderPosts, setRenderPosts] = React.useState([]);
     const [button, setButton] = useState("Newest");
     const { searchQuery, searchResults } = useSearch();
+    const [sorted, setSorted] = React.useState([]);
 
     useEffect(() => {
-        const renders = posts.filter(post =>
+        const renders = sorted.filter(post =>
             post.skills.includes(title)
         )
         setRenderPosts(renders);
         setButton(title);
     }, [title]);
 
+    useEffect(() => {
+        const sortByDate = posts.sort((a, b) =>
+            new Date(b.date) - new Date(a.date));
+        setSorted(sortByDate);
+        console.log(sortByDate);
+    }, [title]);
+
     let content;
 
     if (searchQuery && searchResults.length > 0) {
         content = searchResults.map((post, index) => (
-            <BlogPost key={index} post={post} />
+            <PostCard key={index} post={post} />
         ));
     } else if (searchQuery && searchResults.length === 0) {
         content = <p>No results found.</p>;
     } else if (button === "Newest") {
-        content = posts.map((post, index) => (
-            <BlogPost key={index} post={post} />
+        content = sorted.map((post, index) => (
+            <PostCard key={index} post={post} />
         ));
     } else {
         content = renderPosts.map((post, index) => (
-            <BlogPost key={index} post={post} />
+            <PostCard key={index} post={post} />
         ));
     }
 
