@@ -46,7 +46,7 @@ const Content = ({post}) => {
                                 }
                             </ul>
                         </div>
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full sm:w-1/2">
                             <p className="text-base md:text-xl mb-2 font-semibold text-black/80">{introTitle}</p>
                             <p className="text-black/80">{introContent}</p>
                         </div>

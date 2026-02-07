@@ -7,8 +7,8 @@ const app = express();
 app.use(
     cors({
         origin: [
-            'http://localhost:5173',     // local dev
-            'https://riachoiblog.riachoi.com' // production frontend
+            'http://localhost:5173', // local dev
+            'https://riachoiblog.riachoi.com' // frontend url
         ],
         methods: ['GET'],
     })
