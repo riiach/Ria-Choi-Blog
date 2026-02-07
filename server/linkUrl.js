@@ -8,7 +8,7 @@ app.use(
     cors({
         origin: [
             'http://localhost:5173',     // local dev
-            'https://your-frontend.onrender.com' // production frontend
+            'https://riachoiblog.riachoi.com' // production frontend
         ],
         methods: ['GET'],
     })
