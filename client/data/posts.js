@@ -15,27 +15,68 @@ export default [
             contents: {
                 "Introduction": {
                     title: "Introduction to overall designing.",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    content: "When you're just starting out building your website, it’s completely normal\n" +
+                        "to feel overwhelmed. In this post, I’ll walk through how I built my blog.",
                 },
                 "Overall Design": {
-                    title: "How to design app building.",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    contentImg: [],
+                    content: [
+                        {
+                          type: 'title',
+                          value: 'How to design app building.'
+                        },
+                        {
+                            type: 'text',
+                            value: `
+                            When you're just starting out building your website, it’s completely normal
+                            to feel overwhelmed. In this post, I’ll walk through how I built my blog.
+                            `,
+                        },
+
+                        {
+                            type: 'code',
+                            language: 'javascript',
+                            value: `
+                            import express from 'express';
+                                
+                            const app = express();
+                                
+                            app.get('/', (req, res) => {
+                              res.send('Hello world');
+                            });
+                                
+                            app.listen(3000);
+                            `,
+                        },
+
+                        {
+                            type: 'link',
+                            url: 'https://react.dev',
+                        },
+
+                        {
+                            type: 'text',
+                            value: `
+                            This setup gave me a clean development experience and room to grow later.
+                            `,
+                        },
+                        {
+                            type: 'img',
+                            url: "https://images.pexels.com/photos/381949/pexels-photo-381949.jpeg",
+                            alt: "thumbnail"
+                        },
+                        {
+                            type: 'caption',
+                            value: "This img shows that..."
+                        }
+                    ],
                 },
                 "Using Figma": {
                     title: "Good Design tools makes the job x100 easier - Figma",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    contentImg: [
-                        "https://images.pexels.com/photos/16711185/pexels-photo-16711185.jpeg",
-                        "https://images.pexels.com/photos/4549416/pexels-photo-4549416.jpeg",
-                        "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg",
-                        "https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg"
-                    ]
+                    content: [],
                 },
                 "Detailed Code Planning": {
                     title: "Should I worry about how I actually going to make this at this stage?",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    contentImg: [],
+                    content: [],
                 }
             }
         },

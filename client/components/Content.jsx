@@ -1,6 +1,5 @@
 import React from 'react'
-import TemplateImg from "./TemplateImg.jsx";
-import TemplateNoImg from "./TemplateNoImg.jsx";
+import Template from "./Template.jsx";
 import Issued from "./Issued.jsx";
 import RelatedContents from "./RelatedContents.jsx";
 import Footer from "../pages/Footer.jsx";
@@ -11,7 +10,6 @@ const Content = ({post}) => {
     const subtitle = post.blogContent.subtitle;
     const thumbnail = post.blogContent.thumbnail;
     const index = post.blogContent.index;
-    const contents = post.blogContent.contents;
     const introduction = post.blogContent.contents["Introduction"];
     const introTitle = introduction.title;
     const introContent= introduction.content;
@@ -63,10 +61,7 @@ const Content = ({post}) => {
                                 id={`section-${sectionNumber}`}
                                 className="scroll-mt-24"
                             >
-                                {section.contentImg.length === 0
-                                    ? <TemplateNoImg content={section}/>
-                                    : <TemplateImg content={section}/>
-                                }
+                                <Template content={section.content}/>
                             </section>
                         )
                     })
