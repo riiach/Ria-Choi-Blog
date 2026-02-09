@@ -47,15 +47,15 @@ const Blog = () => {
     }
 
     return (
-        <div className="w-screen h-auto mt-16 px-6 md:px-8 py-16 flex flex-col gap-8">
+        <div className="w-screen h-auto mt-16 py-16 flex flex-col gap-8">
             <Navbar />
-            <h1 className="text-black/80 text-5xl md:text-7xl">
+            <h1 className="text-black/80 text-5xl md:text-7xl px-6 md:px-8">
                 {searchQuery
                     ? `Results for "${searchQuery}"`
                     : `${title}`}
             </h1>
             <Category setTitle={setTitle} title={title} />
-            <div className="w-full flex flex-wrap gap-8">
+            <div className="w-full flex flex-wrap gap-8 px-6 md:px-8">
                 {content}
             </div>
             <Footer />

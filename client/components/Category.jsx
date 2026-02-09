@@ -14,7 +14,7 @@ const Category = ({title, setTitle}) => {
     }
 
     return (
-        <div className={`w-screen h-auto flex-row gap-4 flex-wrap ${
+        <div className={`w-screen h-auto flex-row gap-4 flex-wrap px-6 md:px-8 ${
             searchQuery ? "hidden" : "flex"
         }`}
         >

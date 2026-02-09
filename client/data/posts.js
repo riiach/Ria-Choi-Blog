@@ -16,7 +16,7 @@ export default [
             title: "How I Built This Blog",
             subtitle: "Part1. Planning & Designing a Blog-Type Website.",
             thumbnail: "https://images.pexels.com/photos/381949/pexels-photo-381949.jpeg",
-            index: ["Introduction", "Overall Structure", "Using Figma", "Detailed Code Planning"],
+            index: ["Introduction", "Overall Structure", "Using Figma", "Detailed Code Planning", "Navigation Planning"],
             contents: {
                 "Introduction": {
                     title: "Introduction to Blog-Type Website Planning",
@@ -48,7 +48,7 @@ export default [
                         {
                             type: 'text',
                             value: `
-                            I’d definitely recommend checking out this site for inspiration. 
+                            I’d definitely recommend checking out these websites for inspiration. 
                             There’s nothing wrong with seeing how other professionals built their projects, 
                             especially when you’re just starting out.
                             `,
@@ -107,7 +107,7 @@ export default [
                         },
                         {
                             type: 'link',
-                            value: 'https://www.figma.com'
+                            url: 'https://www.figma.com'
                         },
                         {
                             type: 'text',
@@ -119,8 +119,14 @@ export default [
                             but I’ve written a separate post about how programmers can pull the info they actually need from Figma design files:`
                         },
                         {
+                            type: 'img',
+                            url: 'https://i.ibb.co/0pKSQ0SD/figma.png',
+                            alt: 'my figma workspace',
+                            caption: 'As you can see, figma file helped me a lot building this blog.'
+                        },
+                        {
                             type: 'link',
-                            value: 'https://www.figma.com'
+                            url: 'https://www.figma.com'
                         },
                     ],
                 },
@@ -128,7 +134,7 @@ export default [
                     content: [
                         {
                             type: 'title',
-                            value: `Should I worry about how I'm actually going to build this at this stage?`
+                            value: `Should I worry about how I'm actually going to build at this stage?`
                         },
                         {
                             type: 'text',
@@ -151,7 +157,7 @@ export default [
                         {
                             type: 'text',
                             value: "as a beginner.\n" + "\n" +
-                                "You're almost always going to figure out a better way to approach the problems, and you'll have to change your plan everytime. "
+                                "You're almost always going to figure out better ways to approach the problems, and you'll have to change your plan each time. "
                         },
                         {
                             type: 'text',
@@ -283,11 +289,48 @@ const Template = ({content}) => {
                         },
                         {
                             type: 'text',
-                            value: `I probably would have to change the way I render the blog post as time moves on, but for small blog like I have now, I think this is going to be enough. `
+                            value: `I probably would have to change the way I render the blog post as the project grows, but for small blog like I have now, I think this is going to be enough. `
                         },
                     ],
                 },
-            }
+                "Navigation Planning": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'How do I plan where every button and link takes to?'
+                        },
+                        {
+                            type: 'text',
+                            value: `You don’t need a detailed plan at this stage, 
+                        but I strongly recommend using a flowchart before you start building anything.`
+                        },
+                        {
+                            type: 'text',
+                            value: `You can check out the link below on my post about what is a flowchart.`
+                        },
+                        {
+                            type: 'link',
+                            url: 'https://www.figma.com'
+                        },
+                        {
+                            type: 'text',
+                            value: `If you’re not a computer science major, don’t worry. 
+                        Your flowchart doesn’t need to look professional or use fancy tools. 
+                        What matters is having a clear plan for navigation. It can be as simple as writing each step on paper or sketching boxes and arrows to visualize the user journey.`
+                        },
+                        {
+                            type: 'text',
+                            value: `You can see my flowchart below, it tells how every action triggers another.`
+                        },
+                        {
+                            type: 'img',
+                            url: 'https://i.ibb.co/rRtpC7d5/Blog-Home-Page-Flow-Chart.png',
+                            alt: 'my figma workspace',
+                            caption: 'This is just for the home page on my blog website.'
+                        },
+                    ]
+                }
+            },
         },
     },
 ]

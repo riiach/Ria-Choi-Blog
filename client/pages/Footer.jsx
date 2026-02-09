@@ -4,46 +4,56 @@ import { MoveUpRight } from 'lucide-react'
 
 const Footer = () => {
     return (
-        <div className="w-full h-56 border-t border-gray-400 pt-8 flex flex-row justify-between items-start">
-            <img src={logo} alt="logo" className="w-10"/>
-            <div className="w-full h-full flex flex-col justify-start items-end">
+        <div id="footer" className="w-full h-56 border-t border-gray-400 pt-8 flex flex-row justify-between items-start overflow-y-hidden">
+            <div className="pl-6">
+                <img src={logo} alt="logo" className="w-10"/>
+            </div>
+            <div className="w-full h-full flex flex-col justify-start items-end pr-12">
                 <div className="w-auto h-auto border-b border-gray-500 flex flex-col justify-start items-end pb-8 mb-8 gap-2">
                     <p className="font-semibold">Written & Built by Ria Choi</p>
-                    <p className="group/2 flex flex-row">
                         <a
-                            className="hover:underline"
+                            className="hover:underline group inline-flex"
                             href="https://www.riachoi.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >Check out my website</a>
-                        <MoveUpRight className="hidden group-hover/2:block w-4" />
-                    </p>
+                        >Check out my website
+                            <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                            />
+                        </a>
                 </div>
-                <p className="group/3 flex flex-row">
                     <a
-                        className="hover:underline"
+                        className="hover:underline group inline-flex"
                         href="mailto:riiachoii@gmail.com"
-                    >riiachoii@gmail.com</a>
-                    <MoveUpRight className="hidden group-hover/3:block w-4" />
-                </p>
-                <p className="group/4 flex flex-row">
+                    >riiachoii@gmail.com
+                        <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                        />
+                    </a>
                     <a
-                        className="hover:underline"
+                        className="hover:underline group inline-flex"
                         href="https://www.linkedin.com/in/ria-choi-76a658309/"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >LinkedIn profile</a>
-                    <MoveUpRight className="hidden group-hover/4:block w-4" />
-                </p>
-                <p className="group/5 flex flex-row">
+                    >LinkedIn profile
+                        <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                        />
+                    </a>
                     <a
-                        className="hover:underline"
+                        className="hover:underline group flex flex-row"
                         href="https://www.instagram.com/riiiach?igsh=Z2c4d2g4ZzBkNXN0&utm_source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >riiiach@instagram</a>
-                    <MoveUpRight className="hidden group-hover/5:block w-4" />
-                </p>
+                    >riiiach@instagram
+                        <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                        />
+                    </a>
             </div>
         </div>
     )

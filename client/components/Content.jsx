@@ -2,7 +2,6 @@ import React from 'react'
 import Template from "./Template.jsx";
 import Issued from "./Issued.jsx";
 import RelatedContents from "./RelatedContents.jsx";
-import Footer from "../pages/Footer.jsx";
 import { MoveUpRight } from 'lucide-react'
 
 const Content = ({post}) => {
@@ -20,7 +19,7 @@ const Content = ({post}) => {
     console.log(sections);
 
     return (
-        <div className="w-screen h-auto mt-16 p-4 md:p-8">
+        <div className="w-screen h-auto p-4 md:p-8">
             <Issued post={post} />
             <div className="px-0 md:px-8 py-4">
                 <section id="section-1" className="scroll-mt-24">
@@ -40,7 +39,10 @@ const Content = ({post}) => {
                                             className="mb-1 underline text-black/80"
                                             href={`#section-${index + 1}`}
                                         >{item}</a>
-                                        <MoveUpRight className="opacity-0 group-hover:opacity-100 w-4"/>
+                                            <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                    group-hover:opacity-100
+                                    group-hover:translate-y-0"
+                                            />
                                         </li>
                                     ))
                                 }
@@ -68,7 +70,6 @@ const Content = ({post}) => {
                 }
             </div>
             <RelatedContents post={post} />
-            <Footer />
         </div>
     )
 }

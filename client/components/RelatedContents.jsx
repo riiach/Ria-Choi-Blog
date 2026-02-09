@@ -2,6 +2,8 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import posts from '../data/posts.js'
+import { NavLink } from "react-router-dom";
+import { MoveUpRight } from 'lucide-react'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,7 +17,7 @@ const RelatedContents = ({post}) => {
     const contentsArray = Object.values(contents);
 
     return (
-        <div className="mb-12">
+        <div id="section-realatedContents">
             <p className="text-xl text-black/80 font-semibold mb-4 border-t border-gray-400 pt-6 mt-12">Related Contents</p>
 
             {/*mobile*/}
@@ -33,7 +35,16 @@ const RelatedContents = ({post}) => {
                         contentsArray.map((content, index) => (
                             <SwiperSlide key={index}>
                                 <img src={content.thumbnail} className="w-full h-64 object-cover" />
-                                <p className="text-black/80 font-semibold">{content.series}</p>
+                                    <NavLink
+                                        className="text-black/80 font-semibold underline mt-2 inline-flex group mt-2"
+                                        to={`/${content.slug}`}
+                                    >
+                                        {content.series}
+                                        <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                    group-hover:opacity-100
+                                    group-hover:translate-y-0"
+                                        />
+                                    </NavLink>
                                 <p className="text-black/80 text-sm">{content.title}</p>
                             </SwiperSlide>
                         ))
@@ -56,7 +67,16 @@ const RelatedContents = ({post}) => {
                         contentsArray.map((content, index) => (
                             <SwiperSlide key={index}>
                                 <img src={content.thumbnail} className="w-full h-64 object-cover" />
-                                <p className="text-black/80 font-semibold">{content.series}</p>
+                                <NavLink
+                                    className="text-black/80 font-semibold mt-2 underline inline-flex group"
+                                    to={`/${content.slug}`}
+                                >
+                                    {content.series}
+                                    <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                    group-hover:opacity-100
+                                    group-hover:translate-y-0"
+                                    />
+                                </NavLink>
                                 <p className="text-black/80 text-sm">{content.title}</p>
                             </SwiperSlide>
                         ))
@@ -79,7 +99,16 @@ const RelatedContents = ({post}) => {
                         contentsArray.map((content, index) => (
                             <SwiperSlide key={index}>
                                 <img src={content.thumbnail} className="w-full h-64 object-cover" />
-                                <p className="text-black/80 font-semibold">{content.series}</p>
+                                <NavLink
+                                    className="text-black/80 font-semibold mt-2 underline inline-flex group"
+                                    to={`/${content.slug}`}
+                                >
+                                    {content.series}
+                                    <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                    group-hover:opacity-100
+                                    group-hover:translate-y-0"
+                                    />
+                                </NavLink>
                                 <p className="text-black/80 text-sm">{content.title}</p>
                             </SwiperSlide>
                         ))
@@ -102,7 +131,16 @@ const RelatedContents = ({post}) => {
                         contentsArray.map((content, index) => (
                             <SwiperSlide key={index}>
                                 <img src={content.thumbnail} className="w-full h-64 object-cover" />
-                                <p className="text-black/80 font-semibold">{content.series}</p>
+                                <NavLink
+                                    className="text-black/80 font-semibold underline mt-2 inline-flex group"
+                                    to={`/${content.slug}`}
+                                >
+                                    {content.series}
+                                    <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                    group-hover:opacity-100
+                                    group-hover:translate-y-0"
+                                    />
+                                </NavLink>
                                 <p className="text-black/80 text-sm">{content.title}</p>
                             </SwiperSlide>
                         ))

@@ -65,12 +65,15 @@ const Template = ({content}) => {
                                             <div className="flex flex-row items-center mb-1 group">
                                                 <div className="w-2 h-2 rounded-full bg-black mr-2"></div>
                                                 <a
-                                                    className="font-semibold text-black/80 hover:underline"
+                                                    className="font-semibold text-black/80 underline"
                                                     href={item.url}
                                                     target="_blank"
                                                 >{item.label}
                                                 </a>
-                                                <MoveUpRight className="opacity-0 w-4 group-hover:opacity-100"/>
+                                                <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                                                />
                                             </div>
                                             <p className="text-sm text-gray-600 italic">
                                                 {item.description}

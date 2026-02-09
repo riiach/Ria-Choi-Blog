@@ -13,10 +13,13 @@ const PostCard = ({post}) => {
                 className="h-108 mb-6 object-cover"
             />
             <div className="flex flex-col gap-2 min-w-[320px]">
-                <p className="group flex flex-row">
-                    <NavLink to={`/${post.slug}`} className="text-xl font-semibold hover:underline">{post.series}</NavLink>
-                    <MoveUpRight className="opacity-0 group-hover:opacity-100 w-4"/>
-                </p>
+                    <NavLink to={`/${post.slug}`} className="text-xl font-semibold hover:underline group inline-flex">
+                        {post.series}
+                        <MoveUpRight className="w-4 opacity-0 translate-y-1 transition
+                                                group-hover:opacity-100
+                                                group-hover:translate-y-0"
+                        />
+                    </NavLink>
                 <p className="break-words">{post.title}</p>
 
                 <div className="flex flex-wrap gap-2">
