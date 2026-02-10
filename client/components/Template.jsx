@@ -39,12 +39,25 @@ const Template = ({content}) => {
                     case 'img':
                         return (
                             <div className="flex flex-col mb-4">
-                                <img src={block.url}
-                                     alt={block.alt || ''}
-                                     className="w-full lg:w-1/2 h-auto object-cover rounded-t-2xl border border-black/80"
-                                />
-                                <div className="w-full lg:w-1/2 h-auto bg-black rounded-b-2xl py-2 md:py-4 px-4 border-t-0">
-                                    <p className="text-gray-300 italic">{block.caption}</p>
+                                <div className="w-fit max-w-full">
+                                    <img
+                                        src={block.url}
+                                        alt={block.alt || ''}
+                                        className={`
+                                            max-w-full
+                                            max-h-[80vh]
+                                            object-contain
+                                            border border-black/80
+                                            ${block.caption ? "rounded-t-2xl" : "rounded-2xl"}
+                                          `}
+                                    />
+
+                                    <div
+                                        className={`bg-black rounded-b-2xl py-2 md:py-4 px-4 
+                                                    ${block.caption ? "block" : "hidden"}`}
+                                    >
+                                        <p className="text-gray-300 italic">{block.caption}</p>
+                                    </div>
                                 </div>
                             </div>
                         )

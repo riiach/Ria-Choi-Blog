@@ -6,7 +6,7 @@ const LinkPreview = ({ image, title, description, url }) => {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full max-w-3xl border rounded-lg overflow-hidden hover:bg-neutral-50 transition mb-4"
+            className="flex w-full max-w-3xl max-h-36 border rounded-lg overflow-hidden hover:bg-neutral-50 transition mb-4"
         >
             {/* Image */}
             {image && (

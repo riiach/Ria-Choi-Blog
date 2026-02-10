@@ -17,7 +17,7 @@ const Navbar = () => {
             <NavLink to="/" onClick={handleClick}>
                 <img src={logo} alt="logo" className="w-8 aspect-auto" />
             </NavLink>
-            <NavLink to="/" onClick={handleClick} className="text-base sm:text-xl text-black/80 font-semibold">HoW?ToCoD3</NavLink>
+            <NavLink to="/" onClick={handleClick} className="text-base sm:text-xl text-black/80 font-semibold">CODE BEGIN</NavLink>
             <SearchBar />
         </nav>
     )

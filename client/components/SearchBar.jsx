@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSearch } from '../context/SearchContext.jsx';
-import posts from '../data/posts.js'
+import posts from '../data/posts.jsx'
 import { useLocation } from 'react-router-dom'
 
 const SearchBar = () => {

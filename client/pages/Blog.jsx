@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Navbar from '../components/Navbar.jsx'
 import Category from '../components/Category.jsx'
 import PostCard from './PostCard.jsx'
-import posts from '../data/posts.js'
+import posts from '../data/posts.jsx'
 import { useSearch } from '../context/SearchContext.jsx';
 import Footer from './Footer.jsx'
 

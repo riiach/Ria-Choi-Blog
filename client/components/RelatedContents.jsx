@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
-import posts from '../data/posts.js'
+import posts from '../data/posts.jsx'
 import { NavLink } from "react-router-dom";
 import { MoveUpRight } from 'lucide-react'
 

@@ -297,7 +297,7 @@ const Template = ({content}) => {
                     content: [
                         {
                             type: 'title',
-                            value: 'How do I plan where every button and link takes to?'
+                            value: 'How do I plan where every button and link leads to?'
                         },
                         {
                             type: 'text',
@@ -333,4 +333,223 @@ const Template = ({content}) => {
             },
         },
     },
+    {
+        category: 'Figma',
+        slug: 'usingFigmaAsAProgrammerPart1',
+        series: 'Using Figma as a programmer',
+        title: 'Getting Resources from Figma',
+        skills: ['Figma', 'React Native'],
+        date: '2026/02/10',
+        thumbnail: 'https://i.ibb.co/G3nJJGyL/getting-Resources-On-Figma-Main.png',
+        blogContent: {
+            title: "Using Figma as a programmer",
+            subtitle: "Getting Resources from Figma",
+            thumbnail: "https://i.ibb.co/G3nJJGyL/getting-Resources-On-Figma-Main.png",
+            index: ["Introduction", "Figma Community", "Work Space", "Getting Resources"],
+            contents: {
+                "Introduction": {
+                    title: "Introduction to Getting Resources from Figma",
+                    content: (
+                        <>
+                            As a beginner in programming, you probably came across Figma.
+                            <br />
+                            Figma is a web-based design tool people use to design websites, mobile apps,
+                            and UI/UX interfaces—and collaborate on them in real time.
+                            <br />
+                            Figma is so popular in the industry for numerous reasons: It runs in the browser,
+                            provides real-time collaboration and most important for programmers, it's{" "}
+                            <span className="italic">developer-friendly.</span>
+                        </>
+                    )
+                },
+                "Figma Community": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: "Let’s get started with the Figma Community"
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    There are tons of free templates you can find on the Figma Community and Marketplace.
+                                    <br />
+                                    But today, we’re going to look specifically for React Native templates.
+                                    <br /><br />
+                                    <span className="italic">You can click the link below to go over to Figma Community.</span>
+                                </>
+                            )
+                        },
+                        {
+                            type: 'link',
+                            url: 'https://www.figma.com/ko-kr/community'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    The first thing you’ll see on the website is the search bar and a variety of templates.
+                                    <br/>
+                                    You can browse the community for inspiration.
+                                    <br/>
+                                    After looking around for a while, click on the search bar and type “React Native.”
+                                    <br/>
+                                    You can find almost any resource you need for web and app development on Figma.
+                                </>
+                            )
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/MyTZW5cn/getting-Resources-On-Figma1.png",
+                            alt: "figma community",
+                            caption: 'Type "react native" on the search bar.'
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/99mwqBFh/getting-Resources-On-Figma2.png",
+                            alt: "search result",
+                            caption: 'There are many templates you can use for free.'
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/7dTwtkDs/getting-Resources-On-Figma3.png",
+                            alt: "open in figma",
+                            caption: 'Click "Open in Figma"'
+                        },
+                        {
+                            type: 'text',
+                            value: 'In this post, we\'re going to use Argon React Native template by Creative Tim.'
+                        }
+                    ]
+                },
+                "Work Space": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: "Welcome to the Workspace!"
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    The first thing you will see on the top left is a side bar for navigating through <span className="font-semibold">pages and layers.</span>
+                                    <br/>
+                                    If you want to know more about what is pages and layers, I strongly advise you to check
+                                    out <a className="underline font-semibold italic" href="https://help.figma.com/hc/en-us/sections/23691657321239" target="_blank">Figma Learn</a>.
+                                    <br/>
+                                    They support courses and projects you can easily start with with no cost or subscription!
+                                    <br/><br/>
+                                    Now, let's get back to the pages and layers side bar. Today, we'll only be looking into a page called "Screens"
+                                </>
+                            )
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/k2ZR3DQ7/getting-Resources-On-Figma4.png",
+                            alt: "workspace sidebar",
+                            caption: ''
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/9mYBKwfz/getting-Resources-On-Figma8.png",
+                            alt: "screens",
+                            caption: 'You can find real time screen designs.'
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/QFdGW1Fm/getting-Resources-On-Figma5.png",
+                            alt: "screens",
+                            caption: (
+                                <>
+                                    You will also see
+                                    <br/>
+                                    a frame with components.
+                                </>
+                            )
+                        },
+
+                    ]
+                },
+                "Getting Resources": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'Getting Resources on Figma'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    In the previous chapter, we talked about frames that contain <span className="font-semibold">components. </span>
+                                    <br/>
+                                    Most of the information you need to build your app will be found within the frame.
+                                    If you click on the text under Typography, you can view the font details and save them for later
+                                    when setting up your <span className="italic">CSS</span> or <span className="italic">Tailwind configuration.</span>
+                                </>
+                            )
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/mCL0VhP9/getting-Resources-On-Figma6.png",
+                            alt: "font details",
+                            caption: ''
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    You can also find how to style spacing and layouts in the file.
+                                    <br/>
+                                    Just click the component you want to use and look for <span className="font-semibold">"Layout".</span>
+                                </>
+                            )
+                        },
+                        {
+                            type: 'img',
+                            url: "https://i.ibb.co/LhYd2GK6/getting-Resources-On-Figma10.png",
+                            alt: "font details",
+                            caption: ''
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/><br/>
+                                    One of the most important parts of using Figma is understanding what <span className="font-semibold">components </span> are.
+                                    <br/>
+                                    If you want to learn more about components, you can check out Figma's official course on components.
+                                </>
+                            )
+                        },
+                        {
+                            type: 'link',
+                            url: 'https://help.figma.com/hc/en-us/articles/30984647753751-FD4B-Components-fundamentals'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/><br/>
+                                    Now, we’ll <span className="font-semibold">export the assets</span> we need directly from the file.
+                                    This is one of the most convenient features Figma offers.
+                                    You can export any element you see on the screen at no extra cost.
+                                </>
+                            )
+                        },
+                        {
+                            type: 'img',
+                            url: 'https://i.ibb.co/gFwhQNgj/getting-Resources-On-Figma12.png',
+                            alt: 'figma export',
+                            caption: (
+                                <>
+                                    Just look at the very bottom of the right sidebar,<br/> and you’ll find it.
+                                </>
+                            )
+                        }
+
+                    ]
+                },
+            }
+        }
+    }
 ]
