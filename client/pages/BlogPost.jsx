@@ -5,6 +5,7 @@ import Footer from "./Footer.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 
 const BlogPost = ({post}) => {
+
     return (
         <div className="w-screen h-auto flex flex-col py-16">
             <ScrollToTop post={post} />

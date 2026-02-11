@@ -5,6 +5,6 @@ export default [
     "HTML/CSS",
     "JavaScript",
     "API",
-    "Figma",
     "Library",
+    "Development"
 ]

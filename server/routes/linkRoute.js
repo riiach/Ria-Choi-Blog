@@ -1,20 +1,9 @@
-import express from 'express';
 import { getLinkPreview } from 'link-preview-js';
-import cors from 'cors';
+import express from 'express';
 
-const app = express();
+const router = express.Router();
 
-app.use(
-    cors({
-        origin: [
-            'http://localhost:5173', // local dev
-            'https://riachoiblog.riachoi.com' // frontend url
-        ],
-        methods: ['GET'],
-    })
-);
-
-app.get('/api/link-preview', async (req, res) => {
+router.get('/api/link-preview', async (req, res) => {
     const { url } = req.query;
 
     if (!url) return res.status(400).json({ error: 'URL required' });
@@ -35,8 +24,4 @@ app.get('/api/link-preview', async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3001;
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+export default router;

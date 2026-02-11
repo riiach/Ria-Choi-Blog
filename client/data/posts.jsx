@@ -126,7 +126,7 @@ export default [
                         },
                         {
                             type: 'link',
-                            url: 'https://www.figma.com'
+                            url: 'https://riachoiblog.riachoi.com/usingFigmaAsAProgrammerPart1'
                         },
                     ],
                 },
@@ -310,7 +310,7 @@ const Template = ({content}) => {
                         },
                         {
                             type: 'link',
-                            url: 'https://www.figma.com'
+                            url: 'https://riachoiblog.riachoi.com/mappingYourWebsiteJourneyFlowChart'
                         },
                         {
                             type: 'text',
@@ -334,11 +334,11 @@ const Template = ({content}) => {
         },
     },
     {
-        category: 'Figma',
+        category: 'Development',
         slug: 'usingFigmaAsAProgrammerPart1',
         series: 'Using Figma as a programmer',
         title: 'Getting Resources from Figma',
-        skills: ['Figma', 'React Native'],
+        skills: ['Figma','Development', 'React Native'],
         date: '2026/02/10',
         thumbnail: 'https://i.ibb.co/G3nJJGyL/getting-Resources-On-Figma-Main.png',
         blogContent: {
@@ -547,6 +547,470 @@ const Template = ({content}) => {
                             )
                         }
 
+                    ]
+                },
+            }
+        }
+    },
+    {
+        category: 'Development',
+        slug: 'mappingYourWebsiteJourneyFlowChart',
+        series: 'Mapping Your Website Journey',
+        title: 'Guide to FlowCharts with Mermaid',
+        skills: ['Mermaid FlowChart', 'Development'],
+        date: '2026/02/11',
+        thumbnail: 'https://images.pexels.com/photos/6991831/pexels-photo-6991831.jpeg',
+        blogContent: {
+            title: "Mapping Your Website Journey",
+            subtitle: "Guide to FlowCharts with Mermaid",
+            thumbnail: "https://images.pexels.com/photos/6991831/pexels-photo-6991831.jpeg",
+            index: ["Introduction", "About Flowchart", "About Mermaid", "Getting Started", "Features", "Implementations", "Cheat Sheet"],
+            contents: {
+                "Introduction": {
+                    title: "Introduction to FlowCharts with Mermaid",
+                    content: (
+                        <>
+                            Building a website without a proper plan is like going on a road trip without a map.
+                            <br/>You might eventually get somewhere, but you'll take a few wrong turns along the way!
+                            <br/>That's where flowcharts come to the rescue. Think of them as your friendly GPS for web development.
+                            <br/>Today, we're going to dive in about how flowcharts can make your coding journey much easier!
+                        </>
+                    )
+                },
+                "About Flowchart": {
+                    content: [
+                        {
+                            type: "title",
+                            value: "Why Flowcharts are Your Best Friend"
+                        },
+                        {
+                            type: "text",
+                            value: "While there are many ways to plan a project, flowchart offers distinct advantages when used effectively."
+                        },
+                        {
+                            type: 'ul',
+                            title: '',
+                            items: [
+                                {
+                                    label: 'See the Big Picture',
+                                    description: 'Imagine how your users will move through your site, from the moment they land to when they hit that "buy" button',
+                                },
+                                {
+                                    label: 'Stay Organized',
+                                    description: 'Keep all your pages and content nicely structured',
+                                },
+                                {
+                                    label: 'Plan the Tricky Stuff',
+                                    description: 'Figure out all those "what if" scenarios, like what happens when someone forgets their password',
+                                },
+                                {
+                                    label: 'Explain Your Ideas',
+                                    description: 'Show your team or clients what you\'re thinking without confusing technical jargon'
+                                },
+                                {
+                                    label: 'Catch Problems Early',
+                                    description: 'Spot potential hiccups before you\'ve written tons of code'
+                                },
+                            ]
+                        }
+                    ]
+                },
+                "About Mermaid": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'So, What\'s This Mermaid?'
+                        },
+                        {
+                            type: 'text',
+                            value: 'Mermaid is basically magic for making diagrams!' +
+                                'Instead of clicking and dragging shapes around, you just write a few lines of simple code, and that\'s it!'
+                        },
+                        {
+                            type: 'link',
+                            url: 'https://mermaid.js.org/'
+                        }
+                    ]
+                },
+                "Getting Started": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'Let\'s Start making!'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <span className="text-lg font-semibold">The Basics</span>
+                                    <br/>Here's what a simple Mermaid flowchart looks like!
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+graph TD
+    A[Start] --> B[Process]
+    B --> C{Decision}
+    C -->|Yes| D[Action 1]
+    C -->|No| E[Action 2]
+    D --> F[End]
+    E --> F
+                            `
+                        },
+                        {
+                            type: 'ul',
+                            title: 'Break Down',
+                            items: [
+                                {
+                                    label: 'graph TD',
+                                    description: 'A flowchart that goes from top to bottom'
+                                },
+                                {
+                                    label: 'A[Start]',
+                                    description: 'Creates a box with the word "Start" in it'
+                                },
+                                {
+                                    label: '-->',
+                                    description: 'Arrow connecting boxes'
+                                },
+                                {
+                                    label: 'C{Decision}',
+                                    description: 'Makes a diamond shape for yes/no questions'
+                                },
+                                {
+                                    label: '|Yes|',
+                                    description: 'Puts a label on the arrow so people know which path they\'re following'
+                                },
+                            ]
+                        },
+                        {
+                            type: 'img',
+                            url: 'https://i.ibb.co/Nd5gTN0x/mermaid1.png',
+                            alt: 'mermaid basic',
+                            caption: 'The result'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/><br/>
+                                    <span className="text-lg font-semibold">Mix it up with Different Shapes</span>
+                                    <br/>Mermaid has different shapes for different purposes. It's like having different tools in your toolbox.
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+graph LR
+    A[Rectangle - Process]
+    B(Rounded Rectangle - Start/End)
+    C{Diamond - Decision}
+    D([Stadium - Alternative Process])
+    E[[Subroutine]]
+    F[(Database)]
+    G((Circle))
+                            `
+                        },
+                        {
+                            type: 'img',
+                            alt: 'Mermaid Shapes',
+                            url: 'https://i.ibb.co/G4XM8tzw/mermaid2.png',
+                            caption: ''
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/><br/>
+                                    <span className="text-lg font-semibold">Real life examples</span>
+                                    <br/>Let's see how this works with actual website features you might build.
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+//User Sign-Up Flow                            
+graph TD
+    Start([User Visits Registration Page]) --> Form[Fill Registration Form]
+    Form --> Submit{Submit Form}
+    Submit --> Validate{Validate Input}
+    Validate -->|Invalid| Error[Display Error Messages]
+    Error --> Form
+    Validate -->|Valid| CheckEmail{Email Already Exists?}
+    CheckEmail -->|Yes| EmailError[Show Email Exists Error]
+    EmailError --> Form
+    CheckEmail -->|No| CreateAccount[Create User Account]
+    CreateAccount --> SendEmail[Send Verification Email]
+    SendEmail --> Success[Show Success Message]
+    Success --> Redirect[Redirect to Dashboard]
+    Redirect --> End([Registration Complete])                            
+                            `
+                        },
+                        {
+                            type: 'img',
+                            alt: 'Mermaid Sign Up',
+                            url: 'https://i.ibb.co/bgwFqsfw/mermaid3.png',
+                            description: ''
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+//Online Shopping Checkout                           
+graph TD
+    Start([User Clicks Checkout]) --> CheckAuth{User Logged In?}
+    CheckAuth -->|No| Login[Redirect to Login]
+    Login --> CheckAuth
+    CheckAuth -->|Yes| Cart{Cart Has Items?}
+    Cart -->|No| Empty[Show Empty Cart Message]
+    Empty --> End([Return to Shop])
+    Cart -->|Yes| Shipping[Enter Shipping Info]
+    Shipping --> Payment[Enter Payment Details]
+    Payment --> Validate{Validate Payment}
+    Validate -->|Failed| PaymentError[Show Payment Error]
+    PaymentError --> Payment
+    Validate -->|Success| Process[Process Order]
+    Process --> Confirmation[Show Order Confirmation]
+    Confirmation --> Email[Send Confirmation Email]
+    Email --> Complete([Order Complete])                         
+                            `
+                        },
+                        {
+                            type: 'img',
+                            alt: 'Mermaid Shopping Cart',
+                            url: 'https://i.ibb.co/99z0rd2h/mermaid4.png',
+                            description: ''
+                        }
+                    ]
+                },
+                "Features": {
+                  content: [
+                      {
+                          type: 'title',
+                          value: 'Want to Get Fancy? Try These Cool Features!'
+                      },
+                      {
+                          type: 'text',
+                          value: 'You can add colors and styling to make your flowcharts pop'
+                      },
+                      {
+                          type: 'code',
+                          language: 'mermaid',
+                          value: `                          
+graph TD
+    A[Start]:::startClass --> B[Process]
+    B --> C{Decision}:::decisionClass
+    C -->|Yes| D[Success]:::successClass
+    C -->|No| E[Error]:::errorClass
+    
+    classDef startClass fill:#e1f5e1,stroke:#4caf50,stroke-width:3px
+    classDef decisionClass fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    classDef successClass fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    classDef errorClass fill:#ffebee,stroke:#f44336,stroke-width:2px                          
+                          `
+                      },
+                      {
+                          type: 'img',
+                          alt: 'Mermaid Features color',
+                          url: 'https://i.ibb.co/MxjNJz0Y/mermaid5.png',
+                          description: ''
+                      },
+                      {
+                          type: 'text',
+                          value: 'Grouping Related Stuff Together'
+                      },
+                      {
+                          type: 'code',
+                          language: 'mermaid',
+                          value: `                          
+graph TD
+    Start([User Action]) --> Auth
+    
+    subgraph Auth[Authentication System]
+        A1[Check Credentials] --> A2{Valid?}
+        A2 -->|No| A3[Lock Account After 3 Attempts]
+        A2 -->|Yes| A4[Generate Session Token]
+    end
+    
+    Auth --> Main
+    
+    subgraph Main[Main Application]
+        M1[Load User Dashboard]
+        M2[Fetch User Data]
+        M3[Display Content]
+        M1 --> M2 --> M3
+    end
+    
+    Main --> End([User Session Active])                         
+                          `
+                      },
+                      {
+                          type: 'img',
+                          alt: 'Mermaid Features group',
+                          url: 'https://i.ibb.co/21km1zTp/mermaid6.png',
+                          description: ''
+                      }
+                  ]
+                },
+                "Implementations": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'How to Actually Use This Stuff'
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/>
+                                    <span className="text-lg font-semibold">In your documentation</span>
+                                    <br/>Lots of platforms like GitHub, GitLab, Notion support Mermaid!
+                                    <br/>Just wrap your code like this
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+\`\`\`mermaid
+graph TD
+    A[Start] --> B[End]
+\`\`\`                            
+                            `
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/>
+                                    <span className="text-lg font-semibold">On Your Website</span>
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+        graph TD
+            A[Start] --> B[Process]
+            B --> C[End]
+    </div>
+</body>
+</html>                        
+                            `
+                        },
+                        {
+                            type: 'text',
+                            value: (
+                                <>
+                                    <br/>
+                                    <span className="text-lg font-semibold">Using Mermaid in React</span>
+                                </>
+                            )
+                        },
+                        {
+                            type: 'code',
+                            language: 'mermaid',
+                            value: `
+import { useEffect, useRef } from 'react';
+import mermaid from 'mermaid';
+
+function FlowChart({ chart }) {
+    const ref = useRef(null);
+    
+    useEffect(() => {
+        mermaid.initialize({ startOnLoad: true });
+        if (ref.current) {
+            mermaid.contentLoaded();
+        }
+    }, [chart]);
+    
+    return <div ref={ref} className="mermaid">{chart}</div>;
+}              
+                            `
+                        },
+                    ]
+                },
+                "Cheat Sheet": {
+                    content: [
+                        {
+                            type: 'title',
+                            value: 'Quick Cheat Sheet: Mermaid Syntax'
+                        },
+                        {
+                            type: 'ul',
+                            title: '',
+                            items: [
+                                {
+                                    label: 'graph TD or graph LR',
+                                    description: 'Which direction your flowchart flows'
+                                },
+                                {
+                                    label: 'A[Text]',
+                                    description: 'Regular rectangle - for process',
+                                },
+                                {
+                                    label: 'B(Text)',
+                                    description: 'Rounded rectangle rectangle - for start/end points',
+                                },
+                                {
+                                    label: 'C{Text}',
+                                    description: 'Diamond shape - for yes/no decisions',
+                                },
+                                {
+                                    label: 'D([Text])',
+                                    description: 'Stadium shape - rounded ends'
+                                },
+                                {
+                                    label: 'E[[Text]]',
+                                    description: 'Subroutine box'
+                                },
+                                {
+                                    label: 'F[(Text)]',
+                                    description: 'Database cylinder'
+                                },
+                                {
+                                    label: '-->',
+                                    description: 'Regular arrow'
+                                },
+                                {
+                                    label: '-.->',
+                                    description: 'Dotted arrow - for optional paths'
+                                },
+                                {
+                                    label: '==>',
+                                    description: 'Thick arrow - for emphasis'
+                                },
+                                {
+                                    label: '--Label-->',
+                                    description: 'Arrow with a label'
+                                }
+                            ]
+                        },
+                        {
+                            type: 'img',
+                            url: 'https://i.ibb.co/FLCVFDDr/mermaid7.png',
+                            alt: 'Mermaid Cheat Sheet',
+                            description: 'Example Flowchart'
+                        }
                     ]
                 },
             }

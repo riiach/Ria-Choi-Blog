@@ -22,8 +22,8 @@ const Category = ({title, setTitle}) => {
                 <button
                 key={index}
                 className={`
-                w-36 md:w-42 h-10
-                text-base
+                w-22 sm:w-32 md:w-42 h-10
+                text-xs sm:text-base
                 flex justify-center items-center
                 ${isActive(category)
                     ? 'bg-black/80 text-white'
