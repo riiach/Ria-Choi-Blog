@@ -22,7 +22,7 @@ const CodeSnippet = ({
     };
 
     return (
-        <div className="relative my-6 rounded-lg overflow-hidden">
+        <div className="relative my-6 rounded-lg overflow-auto">
             <CodeBlock
                 text={code}
                 language={language}

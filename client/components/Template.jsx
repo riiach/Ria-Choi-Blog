@@ -53,10 +53,10 @@ const Template = ({content}) => {
                                     />
 
                                     <div
-                                        className={`bg-black rounded-b-2xl py-2 md:py-4 px-4 
+                                        className={`bg-[#FFFF5C] border-x border-b rounded-b-2xl py-1 px-4 
                                                     ${block.caption ? "block" : "hidden"}`}
                                     >
-                                        <p className="text-gray-300 italic">{block.caption}</p>
+                                        <p className="text-black italic">{block.caption}</p>
                                     </div>
                                 </div>
                             </div>

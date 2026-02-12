@@ -4,8 +4,8 @@ import { MoveUpRight } from 'lucide-react'
 
 const Footer = () => {
     return (
-        <div id="footer" className="w-full h-56 border-t border-gray-400 pt-8 flex flex-row justify-between items-start overflow-y-hidden">
-            <div className="pl-6">
+        <div id="footer" className="w-full h-auto border-t border-gray-400 pt-8 flex flex-col fmd:flex-row justify-between items-start overflow-y-hidden">
+            <div className="pr-12 md:pr-0 md:pl-6 self-end md:self-start mb-8">
                 <img src={logo} alt="logo" className="w-10"/>
             </div>
             <div className="w-full h-full flex flex-col justify-start items-end pr-12">

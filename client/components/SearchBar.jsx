@@ -24,17 +24,37 @@ const SearchBar = () => {
     };
 
     return (
-        <div
-            className={`w-36 h-12 md:w-48 md:h-12 justify-end items-center
+        <>
+            {/*Desktop*/}
+            <div className="hidden md:flex">
+                <div
+                    className={`w-36 h-12 md:w-48 md:h-12 justify-end items-center
+                ${home ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
+            `}
+                >
+                    <input
+                        className="w-36 h-10 md:w-42 text-sm md:text-base pl-4 text-black border-b"
+                        placeholder="Search contents..."
+                        onChange={(e) => handleSearch(e.target.value)}
+                    />
+                </div>
+            </div>
+
+            {/*Mobile*/}
+            <div className="flex md:hidden">
+                <div
+                    className={`w-36 h-12 md:w-48 md:h-12 justify-end items-center
                 ${home ? 'flex' : 'hidden'}
             `}
-        >
-            <input
-                className="w-36 h-10 md:w-42 text-sm md:text-base pl-4 text-black border-b"
-                placeholder="Search contents..."
-                onChange={(e) => handleSearch(e.target.value)}
-            />
-        </div>
+                >
+                    <input
+                        className="w-36 h-10 md:w-42 text-sm md:text-base pl-4 text-black border-b"
+                        placeholder="Search contents..."
+                        onChange={(e) => handleSearch(e.target.value)}
+                    />
+                </div>
+            </div>
+        </>
     )
 }
 export default SearchBar
