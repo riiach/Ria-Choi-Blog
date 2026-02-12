@@ -4,7 +4,7 @@ export default [
     "React",
     "HTML/CSS",
     "JavaScript",
-    "API",
+    "Backend",
     "Library",
     "Development"
 ]

@@ -24,10 +24,10 @@ const Content = ({post}) => {
             <div className="px-0 md:px-8 py-4">
                 <section id="section-1" className="scroll-mt-24">
                     <p className="text-5xl md:text-7xl text-black/80 mb-6 font-semibold">{title}</p>
-                    <p className="text-base md:text-lg text-black/80 mb-8 ">{subtitle}</p>
+                    <p className="text-base md:text-2xl text-black/80 mb-8 ">{subtitle}</p>
                     <img src={thumbnail} alt="thumbnail" className="w-full md:w-auto md:h-124 object-cover mb-12" />
                     <div className="w-full h-auto flex flex-row gap-16 flex-wrap">
-                        <div className="mr-48">
+                        <div className="mr-0 md:mr-48">
                             <p className="font-semibold text-base md:text-xl mb-2 text-black/80">Content Index</p>
                             <ul className="list-none pl-2">
                                 {

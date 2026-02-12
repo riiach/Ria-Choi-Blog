@@ -26,8 +26,8 @@ const Category = ({title, setTitle}) => {
                 text-xs sm:text-base
                 flex justify-center items-center
                 ${isActive(category)
-                    ? 'bg-black/80 text-white'
-                    : 'bg-white border border-black/80 text-black/80 hover:bg-black/80 hover:text-white'
+                    ? 'bg-[#FFFF5C]'
+                    : 'bg-white border border-black/80 text-black/80 hover:bg-[#FFFF5C] hover:border-white'
                 }`}
                 onClick={() => handleClick(category)}
                 >{category}</button>
