@@ -7,6 +7,7 @@ const app = express();
 app.use(
     cors({
         origin: [
+            'https://ria-older-blog.vercel.app',
             'http://localhost:5173',     // local dev
             'https://your-frontend.onrender.com', // production frontend
             'https://riachoiblog.riachoi.com' // production frontend

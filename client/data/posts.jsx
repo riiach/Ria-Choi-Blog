@@ -126,7 +126,7 @@ export default [
                         },
                         {
                             type: 'link',
-                            url: 'https://riachoiblog.riachoi.com/usingFigmaAsAProgrammerPart1'
+                            url: 'https://ria-older-blog.vercel.app/usingFigmaAsAProgrammerPart1'
                         },
                     ],
                 },
@@ -310,7 +310,7 @@ const Template = ({content}) => {
                         },
                         {
                             type: 'link',
-                            url: 'https://riachoiblog.riachoi.com/mappingYourWebsiteJourneyFlowChart'
+                            url: 'https://ria-older-blog.vercel.app/mappingYourWebsiteJourneyFlowChart'
                         },
                         {
                             type: 'text',
